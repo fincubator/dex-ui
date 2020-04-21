@@ -8,7 +8,7 @@ then
     npm run build-hash
 fi
 ## Build the binaries if this is a release tag
-if [ $TRAVIS_TAG ]
-then
+## if [ $TRAVIS_TAG ]
+## then
     npm run-script package
-fi
+##fi
