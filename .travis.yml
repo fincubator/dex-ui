@@ -8,11 +8,11 @@ matrix:
           osx_image: xcode8.3
 env:
     global:
-        - GITHUB_REPO: blckchnd/rudex-ui
-        - ORGANIZATION_REPO: blckchnd/rudex.org
-        - WALLET_REPO: blckchnd/market.rudex.org
+        - GITHUB_REPO: finteh/dex-ui
+        - ORGANIZATION_REPO: finteh/finteh.org
+        - WALLET_REPO: finteh/dex.finteh.org
         - CXX=g++-4.8
-        - secure: QEIqqSio+7rPwcPI9jXpykKRVNEt12dzUKo50CVIGwJpF9BkGtTADc51dseFft1ZYPI+zsGd0E9PmQlCGjDj9Dz3fY8J8D4YWtN8T9HJtVH86nCJNWfAI7kNmuF2eam4UqRIg+1Wnm2BWdvzMt1Fkt5wvaQ+xNF7eKvTYACcXlJgVkK+BEyEL5xPlecxEJ536F8I1UziTXNwY5bciwwxLDuqrhnkQkBAs5SGtiyjWJ1WHwcCx8kDCRh2LP/OlegLmfx3Xag/4tGt+2eyVnvNoFYT+/P7CRN9GO9o0ZgBwYVy39K4qdrR+XWP7Dt6hkB5CqDpOno/kdGDwcZRw8KHIq5BI7qQvAWN7Q4LigRsjAAu1OAwY9xKH/3CeSWILr/pT/m6BpuiuFvunjxIARmQXk2ThEA6oPKj7YZgKOdag18o7/Kn+2eLOeR14UVHqt7aBH8wVAFULWRFzyWF2S6+l7+UGWsCyvG+swSymh3OlQXNEGTKZ42n5YgW9q+EymVUDHZmPsUJunMrbBWaai6VEUnnMJu3KbXLJ/F0AaTJe7R0J9U1wiON3T6a9NYE6eKSr0xIE2DGsFIm5vrpXop5JqavD2uFm9Dpysa/AU41ma8dauavV65x6dN7ZLeymidUdjnGjFPZzLqLuUC6BwYXxC2YTF8jADyKYcEZB/eQIHo=
+        - secure: JCZrhZV2VQEhh1PnY5QJO1hlgty3LXaeo4N9W0f6pBs78qNFT5mir2B7bH2WaIE/v9aP8PNJF8eCGYPMm1VKBlNtVkGOCXpOJlGXzFhKQ6jlxZD/VD8PF3vgpeMWgiGg8fPSKNjreZnhXyRZ/TBgwsbIkZYFKLhwVlRv0LJsjs69xPw+/BFiAtpdHdoN5XjZ+rycaP0W756sjcdce+6nZ+kyKVhHuCUGm0Q0WAyzvn0oztacQOfB/QB2T+v7QSVG9s361HddC+Zg4PDhAeLBhWRn9SiDyuWqYXtbir2k9i+IRu2TFXThi1gTD6OFIdTxqRbKwWHtcuW8svVvrYXNvwJEidoKQYRoAjuvMz8MlhkaeDsQBvMS7q8b2fhKItIZdpp3rZ2/08fNGfg3oiwGbAYl9ES60cGDWLxDu7hhT6JN4+FCSyG+kfbtR2rmOl2mytVKHKBLwDkw6k0vGv4CLr0IMJ5Pf7wwxaj5v3n6o/NJdBKt/Q7SmEIYwdwp4chC0qidP4MSeepTDSf3/y/VXB9oz+kUKtXOHA4qYnAZDVIjRXLYKv9giK1QlOYEM6nfVYsn0TieMdtNu8fBQPOj+DFX1KY/3bCZXO04fbs0slHWwPNNE/ZPlWalhTT/0o1+QDqZaulSoqEVoqTaRuSLoQe/WAZuSfy947rmjhE0oo0=
 addons:
     apt:
         sources:
@@ -34,13 +34,13 @@ deploy:
     name: $TRAVIS_TAG
     body: Automated release from Travis CI with added files from AppVeyor build
     api_key:
-        secure: WJXIYvyVn5VigQ6gsa8n+PjtDS/E+F9pQouzvJ8NAhUWVgDtEzLGm0jDRg9gsh/zmeB14eiyCrkNYH45FYiTMWDz+8ydzJXeBoWkpwduFWPb1sifRrEuPVUIJ2mDK5UBW4eobQHNda9taUxTBL/VdgZC9KLFuzhwzcFkdkLcBuLZYrmvgziEmJNkQ4/eHc6+n/Hug+dTDIenKcSbw8RH2AZNnGqQOCqEpl8LNMUhl6RczGXC8uu49EMPOON8Km+nlh4frkImbXuXMyudPl3iwTMiZE6xPex5IHS3vbaEbKfJTprNLFnyZyOZnhUCDNatNsRTlrQLMoQgEMYStb9huI/xVdJ6hKZgdVNjiu2ZCYUyxmy2WxBuGc0GBXrojJX4x4U7/+cXohk3DNBMLDcRPQAqWAtre/arIAJLJDi+hVFOmsi03KoWt5F7wduPQe8liaQtLDTa490tdIpJqyUgEKFSEciazkhjd9ggiob2lj+kCfWNe4kPzUogJ+MoenxctIk4aQE/FumnoyjkgOd3bEGMik3B41X6UpRDWqOtkvDRfPw9Pqd9EzjfRiaS7VsjO/ehYflOAdBvpy/PmvYIjdFl/Ij2h3tny74ze4ywVk2xLfN+CQtESHvwVAC1nvcyMvmUj5Wk7eBBnwJeYYGDUhPrB74HMzAFhBgPhq8MfTs=
+        secure: JCZrhZV2VQEhh1PnY5QJO1hlgty3LXaeo4N9W0f6pBs78qNFT5mir2B7bH2WaIE/v9aP8PNJF8eCGYPMm1VKBlNtVkGOCXpOJlGXzFhKQ6jlxZD/VD8PF3vgpeMWgiGg8fPSKNjreZnhXyRZ/TBgwsbIkZYFKLhwVlRv0LJsjs69xPw+/BFiAtpdHdoN5XjZ+rycaP0W756sjcdce+6nZ+kyKVhHuCUGm0Q0WAyzvn0oztacQOfB/QB2T+v7QSVG9s361HddC+Zg4PDhAeLBhWRn9SiDyuWqYXtbir2k9i+IRu2TFXThi1gTD6OFIdTxqRbKwWHtcuW8svVvrYXNvwJEidoKQYRoAjuvMz8MlhkaeDsQBvMS7q8b2fhKItIZdpp3rZ2/08fNGfg3oiwGbAYl9ES60cGDWLxDu7hhT6JN4+FCSyG+kfbtR2rmOl2mytVKHKBLwDkw6k0vGv4CLr0IMJ5Pf7wwxaj5v3n6o/NJdBKt/Q7SmEIYwdwp4chC0qidP4MSeepTDSf3/y/VXB9oz+kUKtXOHA4qYnAZDVIjRXLYKv9giK1QlOYEM6nfVYsn0TieMdtNu8fBQPOj+DFX1KY/3bCZXO04fbs0slHWwPNNE/ZPlWalhTT/0o1+QDqZaulSoqEVoqTaRuSLoQe/WAZuSfy947rmjhE0oo0=
     file_glob: true
     file:
-        - build/binaries/RuDEX*
+        - build/binaries/finteh*
         - build/release-checksums-*
     skip_cleanup: true
     draft: true
     on:
-        repo: blckchnd/rudex-ui
+        repo: finteh/dex-ui
         tags: true
