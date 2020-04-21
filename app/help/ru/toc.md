@@ -23,8 +23,6 @@
     - [PercentUP ](bots/percent-up.md)
 - [Короткая продажа BitAssets](dex/shorting.md)
 - [Шлюзы](gateways/introduction.md)
-    - [OpenLedger](gateways/openledger.md)
     - [Rudex](gateways/rudex.md)
-    - [CryptoBridge](gateways/cryptobridge.md)
-	- [XBTSX](gateways/xbtsx.md)
-	- [SparkDEX](gateways/spark.md)
+    - [FINTEH](gateways/finteh.md)
+
