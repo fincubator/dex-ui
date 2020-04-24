@@ -199,7 +199,8 @@ export function getMyMarketsQuotes() {
             "RUDEX.KRM",
             "RUDEX.WLS",
             "RUDEX.SMOKE",
-            "RUDEX.GRC"
+            "RUDEX.GRC",
+            "RUDEX.PZM"
         ],
         xbtsxTokens: [
             "XBTSX.STH",
@@ -324,11 +325,13 @@ export function getFeaturedMarkets(quotes = []) {
         ["RUDEX.USDT", "RUDEX.BTC"],
         ["RUDEX.USDT", "RUDEX.ETH"],
         ["RUDEX.USDT", "RUDEX.EOS"],
+        ["RUDEX.USDT", "RUDEX.PZM"],
         ["RUDEX.BTC", "RUDEX.ETH"],
         ["RUDEX.BTC", "RUDEX.EOS"],
         ["RUDEX.BTC", "RUDEX.STEEM"],
         ["RUDEX.BTC", "RUDEX.GOLOS"],
         ["RUDEX.BTC", "RUDEX.WLS"],
+        ["RUDEX.BTC", "RUDEX.PZM"],
         ["BTS", "OPEN.MAID"],
         ["BTS", "OPEN.HEAT"],
         ["BTS", "OPEN.INCENT"],
@@ -341,6 +344,7 @@ export function getFeaturedMarkets(quotes = []) {
         ["BTS", "RUDEX.USDT"],
         ["BTS", "RUDEX.WLS"],
         ["BTS", "RUDEX.SMOKE"],
+        ["BTS", "RUDEX.PZM"],
         ["BTS", "XBTSX.STH"],
         ["BTS", "XBTSX.WAVES"],
         ["BTS", "HERTZ"]
