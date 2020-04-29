@@ -58,6 +58,8 @@ class RuDexDepositAddressCache {
         address,
         memo
     ) {
+        if (address === "unknown") return;
+
         let wallet = WalletDb.getWallet();
         if (!wallet) return null;
         wallet.deposit_keys = wallet.deposit_keys || {};

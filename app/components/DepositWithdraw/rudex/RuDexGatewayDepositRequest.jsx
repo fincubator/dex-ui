@@ -17,6 +17,8 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import {Modal} from "bitshares-ui-style-guide";
 import {availableGateways} from "lib/common/gateways";
 
+import {Notification} from "bitshares-ui-style-guide";
+
 class RuDexGatewayDepositRequest extends React.Component {
     static propTypes = {
         gateway: PropTypes.string,
@@ -74,6 +76,16 @@ class RuDexGatewayDepositRequest extends React.Component {
             outputAddress: this.props.account.get("name"),
             stateCallback: this.addDepositAddress
         };
+    }
+
+    _notify(su) {
+        let strN = "copy_address";
+
+        if (su == "memo") strN = "copy_memo";
+
+        Notification.success({
+            message: counterpart.translate("account.notify." + strN)
+        });
     }
 
     // componentWillMount() {
@@ -419,14 +431,20 @@ class RuDexGatewayDepositRequest extends React.Component {
                                 style={{paddingTop: 10}}
                             >
                                 {deposit_address_fragment ? (
-                                    <CopyToClipboard text={clipboardText}>
+                                    <CopyToClipboard
+                                        text={clipboardText}
+                                        onCopy={() => this._notify("address")}
+                                    >
                                         <div className="button">
                                             Copy address
                                         </div>
                                     </CopyToClipboard>
                                 ) : null}
                                 {memoText ? (
-                                    <CopyToClipboard text={memoText}>
+                                    <CopyToClipboard
+                                        text={memoText}
+                                        onCopy={() => this._notify("memo")}
+                                    >
                                         <div className="button">Copy memo</div>
                                     </CopyToClipboard>
                                 ) : null}

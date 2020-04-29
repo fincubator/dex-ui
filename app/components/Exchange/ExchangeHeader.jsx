@@ -64,6 +64,42 @@ export default class ExchangeHeader extends React.Component {
         this.props.onToggleMarketPicker(selectedMarketPickerAsset);
     }
 
+    _checkPotencialScamMarket(quote, base) {
+        let coins = [
+            "BTS",
+
+            "BTC",
+            "CNY",
+            "USD",
+            "EUR",
+            "RUBLE",
+            "KRW",
+            "GBP",
+            "GOLD",
+            "SILVER",
+
+            "PPY",
+            "DONATE"
+        ];
+
+        //1. RUDEX.X <=> RUDEX.X
+        if (quote.indexOf("RUDEX.") !== -1 && base.indexOf("RUDEX.") !== -1)
+            return false;
+
+        //2. coins <=> coins
+        if (coins.indexOf(quote) !== -1 && coins.indexOf(base) !== -1)
+            return false;
+
+        //3. RUDEX.X <=> coins
+        if (
+            (quote.indexOf("RUDEX.") !== -1 && coins.indexOf(base) !== -1) ||
+            (base.indexOf("RUDEX.") !== -1 && coins.indexOf(quote) !== -1)
+        )
+            return false;
+
+        return true;
+    }
+
     render() {
         const {
             quoteAsset,
@@ -459,6 +495,7 @@ export default class ExchangeHeader extends React.Component {
                                     />
                                 ) : null}
                             </ul>
+
                             <ul
                                 className="market-stats stats top-stats"
                                 data-position={"left"}
@@ -485,6 +522,42 @@ export default class ExchangeHeader extends React.Component {
                                 </li>
                             </ul>
                         </div>
+
+                        {this._checkPotencialScamMarket(
+                            quoteSymbol,
+                            baseSymbol
+                        ) === true ? (
+                            <div className="potencial_scam_markets">
+                                <span
+                                    style={{
+                                        color: "red"
+                                    }}
+                                >
+                                    {counterpart.translate(
+                                        "exchange.scam_alert.text1"
+                                    )}
+                                </span>
+                                <span>
+                                    {counterpart.translate(
+                                        "exchange.scam_alert.text2"
+                                    )}
+                                </span>
+                                <span
+                                    style={{
+                                        color: "red"
+                                    }}
+                                >
+                                    {counterpart.translate(
+                                        "exchange.scam_alert.text3"
+                                    )}
+                                </span>
+                                <span>
+                                    {counterpart.translate(
+                                        "exchange.scam_alert.text4"
+                                    )}
+                                </span>
+                            </div>
+                        ) : null}
                     </div>
                 </div>
             </div>

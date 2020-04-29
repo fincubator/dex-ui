@@ -15,13 +15,10 @@ import HelpContent from "../Utility/HelpContent";
 import AccountStore from "stores/AccountStore";
 import SettingsStore from "stores/SettingsStore";
 import SettingsActions from "actions/SettingsActions";
-//import {openledgerAPIs} from "api/apiConfig";
 import RuDexGateway from "../DepositWithdraw/rudex/RuDexGateway";
 import GatewayStore from "stores/GatewayStore";
 import AccountImage from "../Account/AccountImage";
-//import BitsparkGateway from "../DepositWithdraw/bitspark/BitsparkGateway";
-import GdexGateway from "../DepositWithdraw/gdex/GdexGateway";
-//import XbtsxGateway from "../DepositWithdraw/xbtsx/XbtsxGateway";
+
 import PropTypes from "prop-types";
 import DepositModal from "../Modal/DepositModal";
 import WithdrawModal from "../Modal/WithdrawModalNew";
@@ -176,24 +173,11 @@ class AccountDepositWithdraw extends React.Component {
         });
     }
 
-    renderServices(
-        openLedgerGatewayCoins,
-        rudexGatewayCoins,
-        bitsparkGatewayCoins,
-        xbtsxGatewayCoins
-    ) {
+    renderServices(rudexGatewayCoins) {
         //let services = ["Openledger (OPEN.X)", "BlockTrades (TRADE.X)", "Transwiser", "BitKapital"];
         let serList = [];
         let {account} = this.props;
-        let {
-            olService,
-            btService,
-            rudexService,
-            bitsparkService,
-            xbtsxService,
-            citadelService,
-            RudexNotice1Informed
-        } = this.state;
+        let {rudexService, RudexNotice1Informed} = this.state;
 
         let agreement_ru =
             "https://rudex.freshdesk.com/support/solutions/articles/35000138247-cоглашение-об-оказании-услуг-шлюза";
@@ -287,72 +271,12 @@ class AccountDepositWithdraw extends React.Component {
             )
         });
 
-        serList.push({
-            name: "GDEX",
-            identifier: "GDEX",
-            template: (
-                <div>
-                    <GdexGateway account={account} provider={"gdex"} />
-                </div>
-            )
-        });
-
-        /*        serList.push({
-            name: "BitSpark (SPARKDEX.X)",
-            identifier: "SPARKDEX",
-            template: (
-                <div className="content-block">
-                    <div
-                        className="service-selector"
-                        style={{marginBottom: "2rem"}}
-                    >
-                        <ul className="button-group segmented no-margin">
-                            <li
-                                onClick={this.toggleBitSparkService.bind(
-                                    this,
-                                    "gateway"
-                                )}
-                                className={
-                                    bitsparkService === "gateway"
-                                        ? "is-active"
-                                        : ""
-                                }
-                            >
-                                <a>
-                                    <Translate content="gateway.gateway" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {bitsparkService === "gateway" &&
-                    bitsparkGatewayCoins.length ? (
-                            <BitsparkGateway
-                                account={account}
-                                coins={bitsparkGatewayCoins}
-                                provider="bitspark"
-                            />
-                        ) : null}
-                </div>
-            )
-        });*/
-
         return serList;
     }
 
     render() {
         let {account, servicesDown} = this.props;
         let {activeService} = this.state;
-
-        let openLedgerGatewayCoins = this.props.openLedgerBackedCoins
-            .map(coin => {
-                return coin;
-            })
-            .sort((a, b) => {
-                if (a.symbol < b.symbol) return -1;
-                if (a.symbol > b.symbol) return 1;
-                return 0;
-            });
 
         let rudexGatewayCoins = this.props.rudexBackedCoins
             .map(coin => {
@@ -364,32 +288,7 @@ class AccountDepositWithdraw extends React.Component {
                 return 0;
             });
 
-        let bitsparkGatewayCoins = this.props.bitsparkBackedCoins
-            .map(coin => {
-                return coin;
-            })
-            .sort((a, b) => {
-                if (a.symbol < b.symbol) return -1;
-                if (a.symbol > b.symbol) return 1;
-                return 0;
-            });
-
-        let xbtsxGatewayCoins = this.props.xbtsxBackedCoins
-            .map(coin => {
-                return coin;
-            })
-            .sort((a, b) => {
-                if (a.symbol < b.symbol) return -1;
-                if (a.symbol > b.symbol) return 1;
-                return 0;
-            });
-
-        let services = this.renderServices(
-            openLedgerGatewayCoins,
-            rudexGatewayCoins,
-            bitsparkGatewayCoins,
-            xbtsxGatewayCoins
-        );
+        let services = this.renderServices(rudexGatewayCoins);
 
         const serviceNames = [];
         let options = services.map((services_obj, index) => {

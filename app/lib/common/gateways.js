@@ -106,17 +106,6 @@ export const availableGateways = {
         },
         landing: "https://rudex.org/",
         wallet: "https://market.rudex.org/"
-    },
-    GDEX: {
-        id: "GDEX",
-        name: "GDEX",
-        baseAPI: gdex2APIs,
-        isEnabled: _isEnabled("GDEX"),
-        options: {
-            enabled: false,
-            selected: false
-        },
-        wallet: "https://www.gdex.io/"
     }
 };
 

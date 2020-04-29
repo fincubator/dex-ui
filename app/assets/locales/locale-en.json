@@ -36,6 +36,10 @@
             "not_yours": "Not your account",
             "unknown": "Unknown account"
         },
+        "notify": {
+            "copy_memo": "Memo copied",
+            "copy_address": "Address copied"
+        },
         "estimate_value": "Estimated Account value",
         "existing_accounts": "Existing Accounts",
         "existing_user": "Existing user",
@@ -810,6 +814,12 @@
         "vol_short": "Vol",
         "volume": "Volume",
         "volume_24": "24hr Volume",
+        "scam_alert": {
+            "text1": "WARNING: ",
+            "text2": "Potentially dangerous trading pair! Assets on this market are ",
+            "text3": "UNrelated ",
+            "text4": "to RuDEX – by trading on this market you claim responsibility for potential losses of your funds"
+        },
         "worth_less_settlement_warning": "The current market price of {market_link} is higher than settle price",
         "your_price": "Your Call Price",
         "zoom": "Zoom",
