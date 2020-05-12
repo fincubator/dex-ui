@@ -25,7 +25,7 @@ function _isTestnet() {
  * @returns {string}
  */
 export function getWalletName() {
-    return "RuDEX";
+    return "FINTEH";
 }
 
 /**
@@ -33,7 +33,7 @@ export function getWalletName() {
  * @returns {string}
  */
 export function getWalletURL() {
-    return "https://market.rudex.org";
+    return "https://dex.finteh.org";
 }
 
 /**
@@ -46,7 +46,7 @@ export function getFaucet() {
         url: "https://faucet.rudex.org",
         show: true,
         editable: false,
-        referrer: "blckchnd"
+        referrer: "finteh"
     };
 }
 
@@ -73,7 +73,7 @@ export function getLogo() {
  */
 export function getDefaultTheme() {
     // possible ["darkTheme", "lightTheme", "midnightTheme"]
-    return "lightTheme";
+    return "darkTheme";
 }
 
 /**
@@ -94,14 +94,14 @@ export function getUnits() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "RUBLE", "EUR", "RUDEX.BTC", "RUDEX.USDT"];
+    return ["BTS", "RUBLE", "EUR", "FINTEH", "RUDEX.USDT"];
 }
 
 export function getDefaultMarket() {
     if (_isTestnet()) {
         return "USD_TEST";
     }
-    return "BTS_RUDEX.BTC";
+    return "FINTEH_RUDEX.USDT";
 }
 
 /**
@@ -113,7 +113,7 @@ export function getMyMarketsBases() {
     if (_isTestnet()) {
         return ["TEST"];
     }
-    return ["BTS", "RUDEX.BTC", "RUDEX.USDT", "RUBLE"];
+    return ["FINTEH", "RUDEX.BTC", "RUDEX.USDT", "RUBLE"];
 }
 
 /**
@@ -128,7 +128,7 @@ export function getMyMarketsQuotes() {
     let tokens = {
         nativeTokens: [
             //"BTC",
-            "BTS",
+            "FINTEH",
             //"CNY",
             //"USD",
             "EUR",
@@ -139,8 +139,8 @@ export function getMyMarketsQuotes() {
             //"USD"
         ],
         rudexTokens: [
-            "PPY",
-            "DONATE",
+            "FINTEH",
+            "FINTEH.USDT",
             "RUDEX.BTC",
             "RUDEX.ETH",
             "RUDEX.USDT",
@@ -148,7 +148,7 @@ export function getMyMarketsQuotes() {
             "RUDEX.GOLOS",
             "RUDEX.STEEM",
             "RUDEX.WLS",
-            "RUDEX.SMOKE",
+            "FINTEH.GOLOS",
             "RUDEX.PZM"
 
             //"RUDEX.GRC",
@@ -176,45 +176,45 @@ export function getFeaturedMarkets(quotes = []) {
         return [["USD", "TEST"]];
     }
     return [
-        ["BTS", "PPY"],
+        ["FINTEH", "RUDEX.UDT"],
 
-        ["RUBLE", "RUDEX.BTC"],
-        ["RUBLE", "RUDEX.ETH"],
-        ["RUBLE", "RUDEX.EOS"],
-        ["RUBLE", "RUDEX.USDT"],
-        ["RUBLE", "RUDEX.PZM"],
+        //["RUBLE", "RUDEX.BTC"],
+        //["RUBLE", "RUDEX.ETH"],
+        //["RUBLE", "RUDEX.EOS"],
+        //["RUBLE", "RUDEX.USDT"],
+        //["RUBLE", "RUDEX.PZM"],
 
         ["RUDEX.USDT", "RUDEX.BTC"],
         ["RUDEX.USDT", "RUDEX.ETH"],
         ["RUDEX.USDT", "RUDEX.EOS"],
-        ["RUDEX.USDT", "PPY"],
+        //["RUDEX.USDT", "PPY"],
         //["RUDEX.USDT", "DONATE"],
         ["RUDEX.USDT", "RUDEX.GOLOS"],
-        ["RUDEX.USDT", "RUDEX.SMOKE"],
-        ["RUDEX.USDT", "RUDEX.WLS"],
-        ["RUDEX.USDT", "RUBLE"],
+        //["RUDEX.USDT", "RUDEX.SMOKE"],
+        //["RUDEX.USDT", "RUDEX.WLS"],
+        //["RUDEX.USDT", "RUBLE"],
         ["RUDEX.USDT", "RUDEX.PZM"],
 
         ["RUDEX.BTC", "RUDEX.ETH"],
         ["RUDEX.BTC", "RUDEX.EOS"],
         ["RUDEX.BTC", "RUDEX.STEEM"],
         ["RUDEX.BTC", "RUDEX.GOLOS"],
-        ["RUDEX.BTC", "RUDEX.WLS"],
-        ["RUDEX.BTC", "RUDEX.SMOKE"],
-        ["RUDEX.BTC", "PPY"],
-        ["RUDEX.BTC", "DONATE"],
+        //["RUDEX.BTC", "RUDEX.WLS"],
+        //["RUDEX.BTC", "RUDEX.SMOKE"],
+        //["RUDEX.BTC", "PPY"],
+        //["RUDEX.BTC", "DONATE"],
         ["RUDEX.BTC", "USDT"],
-        ["RUDEX.BTC", "RUDEX.PZM"],
+        ["RUDEX.BTC", "RUDEX.PZM"]
 
-        ["BTS", "RUDEX.GOLOS"],
-        ["BTS", "RUDEX.STEEM"],
-        ["BTS", "RUDEX.EOS"],
-        ["BTS", "RUDEX.BTC"],
-        ["BTS", "RUDEX.ETH"],
-        ["BTS", "RUDEX.USDT"],
-        ["BTS", "RUDEX.WLS"],
-        ["BTS", "RUDEX.SMOKE"],
-        ["BTS", "RUDEX.PZM"]
+        //["BTS", "RUDEX.GOLOS"],
+        //["BTS", "RUDEX.STEEM"],
+        //["BTS", "RUDEX.EOS"],
+        //["BTS", "RUDEX.BTC"],
+        //["BTS", "RUDEX.ETH"],
+        //["BTS", "RUDEX.USDT"],
+        //["BTS", "RUDEX.WLS"],
+        //["BTS", "RUDEX.SMOKE"],
+        //["BTS", "RUDEX.PZM"]
         //["BTS", "DONATE"]
     ].filter(a => {
         if (!quotes.length) return true;
@@ -236,7 +236,7 @@ export function getAssetNamespaces() {
         "GDEX.",
         "SPARKDEX.",
         "OPEN.",
-        "BRIDGE.",
+        "FINTEH.",
         "XBTSX.",
         "DEEX."
     ];
@@ -246,10 +246,10 @@ export function getAssetNamespaces() {
  * These namespaces will be hidden to the user, this may include "bit" for BitAssets
  * @returns {[string,string]}
  */
-export function getAssetHideNamespaces() {
-    // e..g "OPEN.", "bit"
-    return ["RUDEX."];
-}
+//export function getAssetHideNamespaces() {
+// e..g "OPEN.", "bit"
+//    return ["RUDEX."];
+//}
 
 /**
  * Allowed gateways that the user will be able to choose from in Deposit Withdraw modal
@@ -299,7 +299,7 @@ export function getListingCoins() {
         {
             name: "Telegram Open Network",
             ticker: "GRAM",
-            account: "rudex-gram",
+            account: "finteh",
             soon: true,
             goal: 5000,
             votes: 0
@@ -307,84 +307,84 @@ export function getListingCoins() {
         {
             name: "Monero",
             ticker: "XMR",
-            account: "rudex-monero",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Litecoin",
             ticker: "LTC",
-            account: "rudex-litecoin",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Dogecoin",
             ticker: "DOGE",
-            account: "rudex-dogecoin",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Dash",
             ticker: "DASH",
-            account: "rudex-dash",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Waves",
             ticker: "WAVES",
-            account: "rudex-waves",
+            account: "finteh",
             goal: 10000,
             votes: 0
         },
         {
             name: "Telos",
             ticker: "TLOS",
-            account: "rudex-telos",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Tron",
             ticker: "TRX",
-            account: "rudex-tron",
+            account: "finteh",
             goal: 10000,
             votes: 0
         },
         {
             name: "Minter Network",
             ticker: "BIP",
-            account: "rudex-bip",
+            account: "finteh",
             goal: 5000,
             votes: 0
         },
         {
             name: "Neo",
             ticker: "NEO",
-            account: "rudex-neo",
+            account: "finteh",
             goal: 10000,
             votes: 0
         },
         {
-            name: "Idena",
-            ticker: "DNA",
-            account: "rudex-idena",
+            name: "Cyberway Golos",
+            ticker: "Golos",
+            account: "finteh-golos",
             goal: 10000,
             votes: 0
         }
     ];
 }
 
-export function getListedCoins() {
-    return [
-        {
-            name: "PRIZM",
-            ticker: "PZM",
-            account: "rudex-prizm",
-            goal: 10000,
-            votes: 0
-        }
-    ];
-}
+//export function getListedCoins() {
+//    return [
+//        {
+//            name: "PRIZM",
+//            ticker: "PZM",
+//            account: "rudex-prizm",
+//            goal: 10000,
+//            votes: 0
+//        }
+//    ];
+//}
