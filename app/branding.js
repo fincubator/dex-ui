@@ -176,7 +176,7 @@ export function getFeaturedMarkets(quotes = []) {
         return [["USD", "TEST"]];
     }
     return [
-        ["FINTEH", "RUDEX.UDT"],
+        ["FINTEH", "RUDEX.USDT"],
 
         //["RUBLE", "RUDEX.BTC"],
         //["RUBLE", "RUDEX.ETH"],
