@@ -9,9 +9,9 @@ var locales = require("./app/assets/locales");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 /*
-* For staging builds, set the version to the latest commit hash, for
-* production set it to the package version
-*/
+ * For staging builds, set the version to the latest commit hash, for
+ * production set it to the package version
+ */
 let branch = !!process.env.BRANCH ? process.env.BRANCH : git.branch();
 var __VERSION__ =
     branch === "develop" ? git.short() : require("./package.json").version;
@@ -58,9 +58,9 @@ module.exports = function(env) {
     const baseUrl = env.electron ? "./" : "baseUrl" in env ? env.baseUrl : "/";
 
     /*
-    * moment and react-intl include tons of locale files, use a regex and
-    * ContextReplacementPlugin to only include certain locale files
-    */
+     * moment and react-intl include tons of locale files, use a regex and
+     * ContextReplacementPlugin to only include certain locale files
+     */
     let regexString = "";
     locales.forEach((l, i) => {
         regexString = regexString + (l + (i < locales.length - 1 ? "|" : ""));
@@ -70,7 +70,7 @@ module.exports = function(env) {
         new HtmlWebpackPlugin({
             template: "!!handlebars-loader!app/assets/index.hbs",
             templateParameters: {
-                title: "RuDEX " + __VERSION__,
+                title: "FINTEH " + __VERSION__,
                 INCLUDE_BASE: !!env.prod && !env.hash,
                 PRODUCTION: !!env.prod,
                 ELECTRON: !!env.electron
@@ -109,10 +109,10 @@ module.exports = function(env) {
         let outputDir = env.electron
             ? "electron"
             : env.hash
-                ? !baseUrl
-                    ? "hash-history"
-                    : `hash-history_${baseUrl.replace("/", "")}`
-                : "dist";
+            ? !baseUrl
+                ? "hash-history"
+                : `hash-history_${baseUrl.replace("/", "")}`
+            : "dist";
         outputPath = path.join(root_dir, "build", outputDir);
 
         // DIRECTORY CLEANER
