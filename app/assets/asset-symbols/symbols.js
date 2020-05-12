@@ -11,7 +11,7 @@ require("file-loader?name=asset-symbols/silver.png!./silver.png");
 
 // rudex assets
 require("file-loader?name=asset-symbols/[name].png!./donate.png");
-require("file-loader?name=asset-symbols/[name].png!./ppy.png");
+require("file-loader?name=asset-symbols/[name].png!./finteh.png");
 require("file-loader?name=asset-symbols/[name].png!./rudex.btc.png");
 require("file-loader?name=asset-symbols/[name].png!./rudex.usdt.png");
 require("file-loader?name=asset-symbols/[name].png!./rudex.eos.png");
