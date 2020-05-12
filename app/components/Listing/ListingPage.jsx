@@ -60,7 +60,7 @@ class ListingPage extends React.Component {
         let agreement_en =
             "https://rudex.freshdesk.com/support/solutions/articles/35000138245-gateway-service-agreement";
 
-        let RuDEX = <span style={{fontWeight: "bold"}}>RuDEX</span>;
+        let RuDEX = <span style={{fontWeight: "bold"}}>FINTEH</span>;
         let DONATE = (
             <Link
                 style={{
@@ -68,14 +68,14 @@ class ListingPage extends React.Component {
                     fontSize: "1.0rem",
                     paddingRight: 5
                 }}
-                to={"/asset/DONATE"}
+                to={"/asset/FINTEH"}
             >
                 <AssetImage
                     maxWidth={25}
                     replaceNoneToBts={false}
-                    name={"DONATE"}
+                    name={"FINTEH"}
                 />
-                DONATE
+                FINTEH
             </Link>
         );
 
@@ -172,7 +172,7 @@ class ListingPage extends React.Component {
                                                         fontSize: "1.0rem"
                                                     }}
                                                     to={
-                                                        "/market/DONATE_RUDEX.BTC"
+                                                        "/market/FINTEH_RUDEX.USDT"
                                                     }
                                                 >
                                                     <Translate content="listing.texts.text3.get" />
@@ -184,12 +184,12 @@ class ListingPage extends React.Component {
                                                         fontSize: "1.0rem",
                                                         paddingRight: 5
                                                     }}
-                                                    to={"/asset/DONATE"}
+                                                    to={"/asset/FINTEH"}
                                                 >
                                                     <AssetImage
                                                         maxWidth={25}
                                                         replaceNoneToBts={false}
-                                                        name={"DONATE"}
+                                                        name={"FINTEH"}
                                                     />
                                                     DONATE
                                                 </Link>
@@ -201,14 +201,14 @@ class ListingPage extends React.Component {
                                                         fontSize: "1.0rem",
                                                         paddingRight: 5
                                                     }}
-                                                    to={"/asset/DONATE"}
+                                                    to={"/asset/FINTEH"}
                                                 >
                                                     <AssetImage
                                                         maxWidth={25}
                                                         replaceNoneToBts={false}
-                                                        name={"DONATE"}
+                                                        name={"FINTEH"}
                                                     />
-                                                    DONATE
+                                                    FINTEH
                                                 </Link>
                                                 <Translate content="listing.texts.text4.t3" />
                                                 <span
@@ -221,7 +221,7 @@ class ListingPage extends React.Component {
                                                         cursor: "pointer"
                                                     }}
                                                 >
-                                                    DONATE
+                                                    FINTEH
                                                 </span>
                                                 <Translate content="listing.texts.text4.t4" />
                                             </p>
@@ -235,14 +235,14 @@ class ListingPage extends React.Component {
                                                         fontSize: "1.0rem",
                                                         paddingRight: 5
                                                     }}
-                                                    to={"/asset/DONATE"}
+                                                    to={"/asset/FINTEH"}
                                                 >
                                                     <AssetImage
                                                         maxWidth={25}
                                                         replaceNoneToBts={false}
-                                                        name={"DONATE"}
+                                                        name={"FINTEH"}
                                                     />
-                                                    DONATE
+                                                    FINTEH
                                                 </Link>
 
                                                 <Translate content="listing.texts.text5.t2" />
@@ -283,16 +283,16 @@ class ListingPage extends React.Component {
                                                             fontSize: "1.0rem",
                                                             paddingRight: 5
                                                         }}
-                                                        to={"/asset/DONATE"}
+                                                        to={"/asset/FINTEH"}
                                                     >
                                                         <AssetImage
                                                             maxWidth={25}
                                                             replaceNoneToBts={
                                                                 false
                                                             }
-                                                            name={"DONATE"}
+                                                            name={"FINTEH"}
                                                         />
-                                                        DONATE
+                                                        FINTEH
                                                     </Link>
                                                     <Translate content="listing.texts.rules.rule_4" />
                                                 </li>
@@ -361,7 +361,7 @@ class ListingPage extends React.Component {
             updating: true
         });
         coins.forEach(coin => {
-            FetchChain("getAsset", "DONATE").then(assetInfo => {
+            FetchChain("getAsset", "FINTEH").then(assetInfo => {
                 Apis.instance()
                     .db_api()
                     .exec("get_named_account_balances", [
@@ -393,7 +393,7 @@ class ListingPage extends React.Component {
                 <p>
                     <Link
                         style={{margin: 2, fontSize: "1.0rem"}}
-                        to={"/market/DONATE_RUDEX.BTC"}
+                        to={"/market/FINTEH_RUDEX.USDT"}
                     >
                         <Translate content="listing.get_donate_tokens" />
                     </Link>
@@ -401,9 +401,9 @@ class ListingPage extends React.Component {
                         <AssetImage
                             maxWidth={25}
                             replaceNoneToBts={false}
-                            name={"DONATE"}
+                            name={"FINTEH"}
                         />
-                        DONATE
+                        FINTEH
                     </span>
                     <Translate content="listing.token" />
                 </p>
