@@ -246,10 +246,10 @@ export function getAssetNamespaces() {
  * These namespaces will be hidden to the user, this may include "bit" for BitAssets
  * @returns {[string,string]}
  */
-//export function getAssetHideNamespaces() {
-// e..g "OPEN.", "bit"
-//    return ["RUDEX."];
-//}
+export function getAssetHideNamespaces() {
+    // e..g "OPEN.", "bit"
+    return ["FINTEH."];
+}
 
 /**
  * Allowed gateways that the user will be able to choose from in Deposit Withdraw modal
