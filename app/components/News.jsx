@@ -9,8 +9,8 @@ import utils from "common/utils";
 let api;
 
 const query = {
-    select_authors: ["rudex"],
-    tag: "rudex",
+    select_authors: ["finteh"],
+    tag: "finteh",
     limit: 20
 };
 
