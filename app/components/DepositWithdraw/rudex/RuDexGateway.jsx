@@ -153,7 +153,7 @@ class RuDexGateway extends React.Component {
 
         let isDeposit = this.state.action === "deposit";
 
-        let supportUrl = "https://rudex.freshdesk.com";
+        let supportUrl = "http://t.me/finteh";
 
         return (
             <div style={this.props.style}>

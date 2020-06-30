@@ -9,7 +9,7 @@ matrix:
 env:
     global:
         - GITHUB_REPO: fincubator/dex-ui
-        - ORGANIZATION_REPO: finteh/finteh.org
+        - ORGANIZATION_REPO: fincubator/finteh.org
         - WALLET_REPO: fincubator/dex.finteh.org
         - CXX=g++-4.8
         - secure:
@@ -44,5 +44,5 @@ deploy:
     skip_cleanup: true
     draft: true
     on:
-        repo: finteh/dex-ui
+        repo: fincubator/dex-ui
         tags: true

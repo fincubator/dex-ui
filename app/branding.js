@@ -43,7 +43,7 @@ export function getWalletURL() {
  */
 export function getFaucet() {
     return {
-        url: "https://faucet.rudex.org",
+        url: "http://reg.finteh.org",
         show: true,
         editable: false,
         referrer: "finteh"

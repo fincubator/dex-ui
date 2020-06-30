@@ -554,7 +554,7 @@ class Footer extends React.Component {
                                     lineHeight: "2rem",
                                     fontSize: "1em"
                                 }}
-                                href="https://rudex.freshdesk.com"
+                                href="http://t.me/finteh"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
