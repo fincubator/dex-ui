@@ -15,17 +15,9 @@ class ChatBro extends React.Component {
         let chatUrl = null;
         switch (currentLocale) {
             default:
-                chatUrl = `https://chat.rudex.org/${currentLocale}/`;
+                chatUrl = `https://www.chatbro.com/${currentLocale}/068DH/`;
                 break;
         }
-
-        return (
-            <iframe
-                style={{height: frameHeight, width: "100%"}}
-                src={chatUrl}
-                sandbox="allow-same-origin allow-forms allow-scripts allow-popups"
-            />
-        );
 
         return (
             <iframe
