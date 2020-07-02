@@ -1247,7 +1247,7 @@
             "coming_soon": "Kommt bald ...",
             "min_amount": "Minimaler Betrag: %(minAmount)s %(symbol)s",
             "min_amount_error": "Bitte geben Sie eine Zahl ein >= Minimum!",
-            "support_block": "Für Ünterstützung kontaktieren Sie RuDEX unter:",
+            "support_block": "Für Ünterstützung kontaktieren Sie FINTEH unter:",
             "under_construction": "In Arbeit"
         },
         "scan_qr": "QR-Code einlesen",
@@ -1262,7 +1262,7 @@
         "unavailable": "Die Gatewaydienstleistung für diese Anlage ist gerade außer Betrieb, bitte versuchen Sie es später noch einmal.",
         "unavailable_CITADEL": "The Citadel Bridge is down or not responding",
         "unavailable_OPEN": "Das OpenLedger Gateway ist außer Betrieb oder antwortet nicht.",
-        "unavailable_RUDEX": "Das RuDEX Gateway ist außer Betrieb oder antwortet nicht.",
+        "unavailable_RUDEX": "Das FINTEH Gateway ist außer Betrieb oder antwortet nicht.",
         "unavailable_TRADE": "Das Blocktrades Gateway ist außer Betrieb oder antwortet nicht.",
         "unavailable_bridge": "Die Gatewaydienstleisung für diese Anlage ist im Moment außer Betrieb, bitte versuchen Sie es später noch einmal!",
         "use_copy_button": "BITTE BENUTZEN SIE DEN KOPIER-KNOPF ZUM KOPIEREN VON ADRESSE UND NOTITZ!",
@@ -1951,7 +1951,11 @@
         "address_found": "Adresse gefunden",
         "amount": "Betrag",
         "retry": "Wiederholen",
-        "use_address": "Adresse verwenden"
+        "use_address": "Adresse verwenden",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "refcode": {
         "claim": "Beanspruchen",
@@ -2755,6 +2759,7 @@
         "brainkey_w2": "Jeder mit Zugang zu diesem Schlüssel wird",
         "brainkey_w3": "Zugang zu Ihren Guthaben in dieser Wallet erhalten.",
         "bts_09_export": "BTS 0.9.3c Schlüsselexportdatei (.json)",
+        "bonus_code": "Einladung, Überweisung, Premium oder anderer Code",
         "cancel": "Abbrechen",
         "change": "Wallet (%(name)s) wechseln",
         "change_backup": "Sie haben gerade Ihr Passwort geändert. Es wird jetzt dringenst empfohlen, eine neue Sicherung anzulegen!",

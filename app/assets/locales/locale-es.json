@@ -1247,7 +1247,7 @@
             "coming_soon": "Próximamente",
             "min_amount": "Monto minimo: %(minAmount)s %(symbol)s",
             "min_amount_error": "Por favor ingrese número >= mínimo",
-            "support_block": "Para soporte, póngase en contacto con RuDEX en:",
+            "support_block": "Para soporte, póngase en contacto con FINTEH en:",
             "under_construction": "En Construcción"
         },
         "scan_qr": "Escanear QR",
@@ -1262,7 +1262,7 @@
         "unavailable": "El servicio de puerta de enlace para este activo está actualmente inactivo. Inténtalo de nuevo más tarde.",
         "unavailable_CITADEL": "El puente de Citadel está caído o no responde",
         "unavailable_OPEN": "OpenLedger Gateway está inactivo o no responde",
-        "unavailable_RUDEX": "RuDEX Gateway está inactivo o no responde",
+        "unavailable_RUDEX": "FINTEH Gateway está inactivo o no responde",
         "unavailable_TRADE": "El puente de Blocktrades está inactivo o no responde",
         "unavailable_bridge": "El servicio de puente para este activo está actualmente inactivo. Inténtalo de nuevo más tarde.",
         "use_copy_button": "POR FAVOR UTILICE EL BOTÓN DE COPIA PARA HACER UNA COPIA DE DIRECCIÓN O MEMO EN ESTA PÁGINA",
@@ -1957,7 +1957,11 @@
         "claim": "Reclamar",
         "claim_refcode": "Reclamar código de referencia",
         "enter_refcode": "Ingrese el código de referencia",
-        "refcode_optional": "código de referencia (opcional)"
+        "refcode_optional": "código de referencia (opcional)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "He escrito o almacenado mi nombre de usuario y contraseña.",
@@ -2755,6 +2759,7 @@
         "brainkey_w2": "Cualquiera con acceso a su llave de recuperación",
         "brainkey_w3": "tendrá acceso a los fondos de esta billetera.",
         "bts_09_export": "BTS 0.9.3c Exportar el file de la llave (.json)",
+        "bonus_code": "Código de invitación, referencia, premium u otro",
         "cancel": "Cancelar",
         "change": "Cambia a %(name)s",
         "change_backup": "Ahora que ha cambiado su contraseña, le recomendamos hacer una nueva copia de seguridad.",

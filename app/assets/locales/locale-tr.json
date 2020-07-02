@@ -1241,7 +1241,7 @@
             "coming_soon": "Coming soon",
             "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
             "min_amount_error": "Please enter number >= minimum",
-            "support_block": "For support, please contact RuDEX at:",
+            "support_block": "For support, please contact FINTEH at:",
             "under_construction": "Under Construction"
         },
         "scan_qr": "Karekod Tara",
@@ -1256,7 +1256,7 @@
         "unavailable": "The gateway service for this asset is currently down, please try again later",
         "unavailable_CITADEL": "The Citadel Bridge is down or not responding",
         "unavailable_OPEN": "The OpenLedger Gateway is down or not responding",
-        "unavailable_RUDEX": "The RuDEX Gateway is down or not responding",
+        "unavailable_RUDEX": "The FINTEH Gateway is down or not responding",
         "unavailable_TRADE": "The Blocktrades Bridge is down or not responding",
         "unavailable_bridge": "The bridge service for this asset is currently down, please try again later",
         "use_copy_button": "PLEASE USE COPY BUTTON TO MAKE COPY OF ADDRESS OR MEMO ON THIS PAGE",
@@ -1951,7 +1951,11 @@
         "claim": "Talep",
         "claim_refcode": "Tavsiye Kodu Talep Et",
         "enter_refcode": "Tavsiye Kodunu Gir",
-        "refcode_optional": "Tavsiye Kodu (opsiyonel)"
+        "refcode_optional": "Tavsiye Kodu (opsiyonel)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "I have written down or otherwise stored my username and password.",
@@ -2749,6 +2753,7 @@
         "brainkey_w2": "Kurtarma anahtarınıza ulaşan herhangi bir kimse",
         "brainkey_w3": "bu cüzdan içindeki fonlara ulaşabilir.",
         "bts_09_export": "BTS 0.9.3c yedek anahtar dosyası (.json)",
+        "bonus_code": "Davetiye, yönlendirme, bonus veya diğer kod",
         "cancel": "İptal",
         "change": "Değiştir (%(name)s Cüzdan)",
         "change_backup": "Şifrenizi değiştirdiğiniz için cüzdanınızı yeniden yedeklemeniz gerekmektedir.",

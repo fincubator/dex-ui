@@ -1247,7 +1247,7 @@
             "coming_soon": "即将上线",
             "min_amount": "最小金额：%(minAmount)s %(symbol)s",
             "min_amount_error": "请输入大于最小金额的数量",
-            "support_block": "请联系 RuDEX 获取客户支持：",
+            "support_block": "请联系 FINTEH 获取客户支持：",
             "under_construction": "施工中"
         },
         "scan_qr": "扫描二维码，手机支付",
@@ -1262,7 +1262,7 @@
         "unavailable": "此资产的网关服务暂时不可用，请稍后再试",
         "unavailable_CITADEL": "Citadel 桥接服务不可用或无响应",
         "unavailable_OPEN": "OpenLedger 网关不可用或无响应",
-        "unavailable_RUDEX": "RuDEX 网关不可用或无响应",
+        "unavailable_RUDEX": "FINTEH 网关不可用或无响应",
         "unavailable_TRADE": "Blocktrades 桥接服务不可用或无响应",
         "unavailable_bridge": "此资产的桥接服务暂时不可用，请稍后再试",
         "use_copy_button": "请在此页面使用 复制 按钮来复制地址或者备注MEMO",
@@ -1957,7 +1957,11 @@
         "claim": "申领",
         "claim_refcode": "领取推荐码",
         "enter_refcode": "输入推荐码",
-        "refcode_optional": "推荐码 (可选)"
+        "refcode_optional": "推荐码 (可选)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "我已经写下了或者用其它方式保存了我的密码。",
@@ -2755,6 +2759,7 @@
         "brainkey_w2": "任何人获得了你的脑钱包密钥信息将",
         "brainkey_w3": "可以获得钱包中资金的使用权限。",
         "bts_09_export": "BTS 0.9.3c 私钥导出文件 (.json)",
+        "bonus_code": "邀请，推荐，奖金或其他代码",
         "cancel": "取消",
         "change": "切换到钱包 %(name)s",
         "change_backup": "你已经修改了密码，强烈建议你创建一个新的备份文件。",

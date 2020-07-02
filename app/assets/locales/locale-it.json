@@ -1241,7 +1241,7 @@
             "coming_soon": "Prossimamente",
             "min_amount": "Quantità minima: %(minAmount)s %(symbol)s",
             "min_amount_error": "Per favore inserisci un numero >= minimo",
-            "support_block": "Per supporto, contatta RuDEX a:",
+            "support_block": "Per supporto, contatta FINTEH a:",
             "under_construction": "Under Construction"
         },
         "scan_qr": "Scandisci QR",
@@ -1256,7 +1256,7 @@
         "unavailable": "Il servizio di gateway per questo asset non è al momento disponibile, riprova più tardi",
         "unavailable_CITADEL": "The Citadel Bridge is down or not responding",
         "unavailable_OPEN": "Il Gateway OpenLedger non è disponibile o non risponde",
-        "unavailable_RUDEX": "Il Gateway RuDEX non è disponibile o non risponde",
+        "unavailable_RUDEX": "Il Gateway FINTEH non è disponibile o non risponde",
         "unavailable_TRADE": "Il Bridge Blocktrades non è disponibile o non risponde",
         "unavailable_bridge": "Il servizio di bridge per questo asset non è al momento disponibile, riprova più tardi",
         "use_copy_button": "PLEASE USE COPY BUTTON TO MAKE COPY OF ADDRESS OR MEMO ON THIS PAGE",
@@ -1951,7 +1951,11 @@
         "claim": "Richesta",
         "claim_refcode": "Richiedi Referral Code",
         "enter_refcode": "Inserisci il Referral Code",
-        "refcode_optional": "Referral Code (facoltativo)"
+        "refcode_optional": "Referral Code (facoltativo)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "I have written down or otherwise stored my username and password.",
@@ -2749,6 +2753,7 @@
         "brainkey_w2": "Chiunque abbia accesso alla tua chiave di recupero avrà",
         "brainkey_w3": "accesso ai fondi in questo portafoglio.",
         "bts_09_export": "File di esportazione chiavi BTS 0.9.3c (.json)",
+        "bonus_code": "Invito, riferimento, bonus o altro codice",
         "cancel": "Annulla",
         "change": "Cambia a %(name)s",
         "change_backup": "Adesso che hai cambiato la tua password, ti consigliamo fortemente di effettuare un nuovo backup.",

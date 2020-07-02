@@ -102,13 +102,13 @@ class ReportModal extends React.Component {
                         <br />
                         &nbsp;&nbsp;
                         <a
-                            href="https://github.com/fincubator/dex-ui/issues"
+                            href="https://github.com/finteh/dex-ui/issues"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{textAlign: "center", width: "100%"}}
                             className="external-link"
                         >
-                            https://github.com/fincubator/dex-ui/issues
+                            https://github.com/finteh/dex-ui/issues
                         </a>
                         <br />
                         <Translate content="modal.report.explanatory_text_3" />

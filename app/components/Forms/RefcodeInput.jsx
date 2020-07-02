@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import classnames from "classnames";
 import Translate from "react-translate-component";
 import cookies from "cookies-js";
@@ -21,7 +22,11 @@ class RefcodeInput extends React.Component {
         super(props);
         let refcode_match = window.location.hash.match(/refcode\=([\w\d]+)/);
         let value = refcode_match ? refcode_match[1] : cookies.get("_refcode_");
-        this.state = {value, error: null};
+        this.state = {
+            value,
+            description_text: "",
+            error: null
+        };
     }
 
     value() {
@@ -32,8 +37,38 @@ class RefcodeInput extends React.Component {
         this.setState({value: ""});
     }
 
+    setBonusDescription(value) {
+        switch (value.slice(0, 3)) {
+            case "BON":
+                this.setState({
+                    description_text: "refcode.bonus_description",
+                    error: null
+                });
+                break;
+            case "REF":
+                this.setState({
+                    description_text: "refcode.referral_description",
+                    error: null
+                });
+                break;
+            case "PRE":
+                this.setState({
+                    description_text: "refcode.premium_description",
+                    error: null
+                });
+                break;
+            default:
+                this.setState({
+                    description_text: "refcode.other_description",
+                    error: null
+                });
+                break;
+        }
+    }
+
     onInputChanged(event) {
         let value = event.target.value.trim();
+        this.setBonusDescription(value);
         this.setState({value, error: null});
     }
 
@@ -85,10 +120,12 @@ class RefcodeInput extends React.Component {
 
     render() {
         let error = this.state.error;
+        const {value = "", description_text} = this.state;
         if (!error && !this.isValidRefcode(this.props.value))
             error = "Not a valid referral code";
         let action_class = classnames("button", {disabled: !!error});
-
+        if (value.length && !description_text.length)
+            this.setBonusDescription(value);
         return (
             <div className="refcode-input">
                 <label>
@@ -113,6 +150,11 @@ class RefcodeInput extends React.Component {
                         </button>
                     ) : null}
                 </span>
+                {this.state.description_text ? (
+                    <span>
+                        <Translate content={this.state.description_text} />
+                    </span>
+                ) : null}
                 <div className="has-error" style={{padding: "0.6rem 0 0 0"}}>
                     <span>{error}</span>
                 </div>

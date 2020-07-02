@@ -21,6 +21,7 @@ import CopyButton from "../Utility/CopyButton";
 import {withRouter} from "react-router-dom";
 import {scroller} from "react-scroll";
 import {Notification, Tooltip} from "bitshares-ui-style-guide";
+import RefcodeInput from "../Forms/RefcodeInput";
 
 class CreateAccountPassword extends React.Component {
     constructor() {
@@ -31,7 +32,7 @@ class CreateAccountPassword extends React.Component {
             validPassword: false,
             registrar_account: null,
             loading: false,
-            hide_refcode: true,
+            hide_refcode: false,
             show_identicon: false,
             step: 1,
             showPass: false,
@@ -70,7 +71,7 @@ class CreateAccountPassword extends React.Component {
     }
 
     scrollToInput() {
-        scroller.scrollTo(`scrollToInput`, {
+        scroller.scrollTo("scrollToInput", {
             duration: 1500,
             delay: 100,
             smooth: true,
@@ -301,7 +302,7 @@ class CreateAccountPassword extends React.Component {
                         </div>
                     </section>
 
-                    <section>
+                    <section className="form-group">
                         <label className="left-label">
                             <Translate content="wallet.confirm_password" />
                         </label>
@@ -324,7 +325,19 @@ class CreateAccountPassword extends React.Component {
                         ) : null}
                     </section>
 
-                    <br />
+                    {this.state.hide_refcode ? null : (
+                        <div>
+                            <RefcodeInput
+                                ref="refcode"
+                                label={"wallet.bonus_code"}
+                                expandable={true}
+                                allow_claim_to_account={"yes"}
+                                action_label={"refcode.claim"}
+                                placeholder={"refcode.enter_refcode"}
+                            />
+                            <br />
+                        </div>
+                    )}
 
                     <div
                         className="confirm-checks"

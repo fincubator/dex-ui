@@ -1241,7 +1241,7 @@
             "coming_soon": "近日公開",
             "min_amount": "最低数量: %(minAmount)s %(symbol)s",
             "min_amount_error": "数字を入力してください >= minimum",
-            "support_block": "サポートについては、RuDEXまでご連絡ください。:",
+            "support_block": "サポートについては、FINTEHまでご連絡ください。:",
             "under_construction": "工事中"
         },
         "scan_qr": "QRをスキャン",
@@ -1256,7 +1256,7 @@
         "unavailable": "このアセットのゲートウェイサービスが現在停止しています。後でやり直してください",
         "unavailable_CITADEL": "The Citadel Bridge is down or not responding",
         "unavailable_OPEN": "OpenLedgerゲートウェイがダウンしているか、応答していません",
-        "unavailable_RUDEX": "RuDEXゲートウェイがダウンしているか、応答していません",
+        "unavailable_RUDEX": "FINTEHゲートウェイがダウンしているか、応答していません",
         "unavailable_TRADE": "Blocktradesブリッジがダウンしているか、応答していません",
         "unavailable_bridge": "このアセットのブリッジサービスは現在停止しています。後でやり直してください",
         "use_copy_button": "アドレス、またはメモをコピーするにはコピーボタンを使用してください。",
@@ -1951,7 +1951,11 @@
         "claim": "請求する",
         "claim_refcode": "紹介コードを請求する",
         "enter_refcode": "紹介コードを入力してください",
-        "refcode_optional": "紹介コード (任意)"
+        "refcode_optional": "紹介コード (任意)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "I have written down or otherwise stored my username and password.",
@@ -2749,6 +2753,7 @@
         "brainkey_w2": "あなたのリカバリーキーにアクセスできる人は誰でも",
         "brainkey_w3": "このウォレットの資金にアクセスできます。",
         "bts_09_export": "BTS 0.9.3cキーエクスポートファイル (.json)",
+        "bonus_code": "招待状、リファレンス、ボーナス、その他のコード",
         "cancel": "キャンセル",
         "change": "%(name)sに変更する",
         "change_backup": "パスワードを変更したため、新しいバックアップを作成することを強く推奨します。",

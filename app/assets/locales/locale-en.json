@@ -818,7 +818,7 @@
             "text1": "WARNING: ",
             "text2": "Potentially dangerous trading pair! Assets on this market are ",
             "text3": "UNrelated ",
-            "text4": "to RuDEX – by trading on this market you claim responsibility for potential losses of your funds"
+            "text4": "to FINTEH – by trading on this market you claim responsibility for potential losses of your funds"
         },
         "worth_less_settlement_warning": "The current market price of {market_link} is higher than settle price",
         "your_price": "Your Call Price",
@@ -1261,10 +1261,10 @@
             "coming_soon": "Coming soon",
             "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
             "min_amount_error": "Please enter number >= minimum",
-            "support_block": "For support, please contact RuDEX at:",
+            "support_block": "For support, please contact FINTEH at:",
             "under_construction": "Under Construction",
-            "rudex_notice1": "Please see the Service Agreement of RuDEX for usage of their gateways",
-            "rudex_notice1_informed": "I have read and agree with RuDEX Service Agreement.",
+            "rudex_notice1": "Please see the Service Agreement of FINTEH for usage of their gateways",
+            "rudex_notice1_informed": "I have read and agree with FINTEH Service Agreement.",
             "listing": {
                 "here": "HERE",
                 "submit_request": "Submit request",
@@ -1299,7 +1299,7 @@
         "unavailable": "The gateway service for this asset is currently down, please try again later",
         "unavailable_CITADEL": "The Citadel Bridge is down or not responding",
         "unavailable_OPEN": "The OpenLedger Gateway is down or not responding",
-        "unavailable_RUDEX": "The RuDEX Gateway is down or not responding",
+        "unavailable_RUDEX": "The FINTEH Gateway is down or not responding",
         "unavailable_TRADE": "The Blocktrades Bridge is down or not responding",
         "unavailable_bridge": "The bridge service for this asset is currently down, please try again later",
         "use_copy_button": "PLEASE USE COPY BUTTON TO MAKE COPY OF ADDRESS OR MEMO ON THIS PAGE",
@@ -1999,7 +1999,11 @@
         "claim": "Claim",
         "claim_refcode": "Claim Referral Code",
         "enter_refcode": "Enter referral code",
-        "refcode_optional": "Referral Code (optional)"
+        "refcode_optional": "Referral Code (optional)",
+        "bonus_description": "BONUS_CODE_DESCRIPTION",
+        "referral_description": "REFERRAL_CODE_DESCRIPTION",
+        "premium_description": "PREMIUM_CODE_DESCRIPTION",
+        "other_description": "OTHER_CODE_DESCRIPTION"
     },
     "registration": {
         "accountConfirmation": "I have written down or otherwise stored my username and password.",
@@ -2797,6 +2801,7 @@
         "brainkey_w2": "Anyone with access to your recovery key will",
         "brainkey_w3": "have access to funds within this local wallet.",
         "bts_09_export": "BTS 0.9.3c key export file (.json)",
+        "bonus_code": "Invite, referral, premium or other code",
         "cancel": "Cancel",
         "change": "Change to %(name)s",
         "change_backup": "Now that you've changed your password, we highly recommend making a new backup.",
@@ -3021,11 +3026,11 @@
             "done": "Collected"
         },
         "texts": {
-            "header": "List an asset on RuDEX",
-            "text1": "Would you like to list an asset on RuDEX, and integrate with Bitshares decentralized trading platform? Use our listing service via public crowdfunding. The listing process is very simple and is described below.",
-            "text2": "To sumbit an asset listing request on RuDEX platform please fill out a simple form (Submit request button). Our team will review your request in accordance with submitted information in 7 business days, and if the project fulfils our listing criteria, it will be added to the public list for public crowdfunding. The main goal for the voluntary crowdfunding is to gather the funds for the launch and maintenance of the gateway, as well as estimation of potentioal interest in an ansset.",
+            "header": "List an asset on FINTEH",
+            "text1": "Would you like to list an asset on FINTEH, and integrate with Bitshares decentralized trading platform? Use our listing service via public crowdfunding. The listing process is very simple and is described below.",
+            "text2": "To sumbit an asset listing request on FINTEH platform please fill out a simple form (Submit request button). Our team will review your request in accordance with submitted information in 7 business days, and if the project fulfils our listing criteria, it will be added to the public list for public crowdfunding. The main goal for the voluntary crowdfunding is to gather the funds for the launch and maintenance of the gateway, as well as estimation of potentioal interest in an ansset.",
             "text3": {
-                "t1": "Any RuDEX user can support the listing of their favorite assets via crowdfunding. ",
+                "t1": "Any FINTEH user can support the listing of their favorite assets via crowdfunding. ",
                 "t2": "To that end please ",
                 "get": "acquire "
             },
@@ -3038,16 +3043,16 @@
             "text5": {
                 "t1": "After the project reaches the set crowdfunding threshold all collected tokens are burned",
                 "t2": "and our teams initiates the listing procedure, that includes gateway creation and set up of the trading pairs for the asset.",
-                "t3": "Please note that the RuDEX team reserves the right to delist assets to protect our own interests and the interests of our customers."
+                "t3": "Please note that the FINTEH team reserves the right to delist assets to protect our own interests and the interests of our customers."
             },
             "rules": {
-                "header": "Checklist for asset listing on RuDEX:",
+                "header": "Checklist for asset listing on FINTEH:",
                 "rule_1": "Please check ",
                 "rule_10": "rules",
                 "rule_11": " and submit a listing request.",
                 "rule_2": "Wait for the review results: if everything is in order, then it would be added to the project listing page within 7 business days.",
                 "rule_3": "Use your time to promote your project crowdfunding process via social networks, attract other users. Use",
-                "rule_4": " tokens to reach the crowdfunding goal (a RuDEX account is required for this).",
+                "rule_4": " tokens to reach the crowdfunding goal (a FINTEH account is required for this).",
                 "rule_5": "Listing process is initiated after the crowdfunding goal is reach, and begins with the gateway launch preparation. Please provide the contacts for technical/marketing team, or any other qualified contact."
             },
             "end": "Good luck with your project and welcome to "

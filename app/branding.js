@@ -377,14 +377,14 @@ export function getListingCoins() {
     ];
 }
 
-//export function getListedCoins() {
-//    return [
-//        {
-//            name: "PRIZM",
-//            ticker: "PZM",
-//            account: "rudex-prizm",
-//            goal: 10000,
-//            votes: 0
-//        }
-//    ];
-//}
+export function getListedCoins() {
+    return [
+        // {
+        //     name: "PRIZM",
+        //     ticker: "PZM",
+        //     account: "rudex-prizm",
+        //     goal: 10000,
+        //     votes: 0
+        // }
+    ];
+}
