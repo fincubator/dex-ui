@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "账户名已被占用。",
             "not_found": "账户未找到。",
-            "premium_name_faucet": "你使用的是高级账户名。高级账户名的注册手续费更高，因此无法通过该免费水龙头服务进行注册。请选择其他名字，其中包含至少一个横杠、数字或者不含元音字母。",
+            "premium_name_faucet": "你使用的是高级账户名。高级账户名的注册手续费更高，因此无法通过该免费水龙头服务进行注册。请选择其他名字，其中包含至少一个横杠、数字或者不含元音字母。如果您想购买高级帐户，请联系 {chat_link} 或在下面的字段中输入代码，然后单击“索取”。",
             "premium_name_warning": "这是高级账户名。高级账户名的注册手续费更高。普通账户名要求包含至少一个横杠(-) 、数字或者不含元音字母。"
         },
         "new_user": "新用户？",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "可选:  {restore_link} 或使用 {restore_form} 注册一个账户.",
             "restore_form": "钱包模式",
-            "restore_link": "恢复你的账户"
+            "restore_link": "恢复你的账户",
+            "chat_link": "聊天室"
         },
         "options": {
             "memo_key": "备注公钥",

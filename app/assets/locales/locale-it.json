@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "Questo nome account è già stato preso.",
             "not_found": "Account non trovato.",
-            "premium_name_faucet": "Questo è un nome premium che non è supportato da questo faucet. Per favore inserisci un nome regolare che contiene almeno un trattino, un numero o nessuna vocale.",
+            "premium_name_faucet": "Questo è un nome premium che non è supportato da questo faucet. Per favore inserisci un nome regolare che contiene almeno un trattino, un numero o nessuna vocale. \n120/5000\nSe desideri acquistare un account con nome premium, contatta {chat_link} o inserisci il codice nel campo sottostante e fai clic su Richiedi.",
             "premium_name_warning": "Questo è un nome premium che costa di più di un nome contenente un trattino (-) o un numero."
         },
         "new_user": "Nuovo utente?",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "Optionally, {restore_link} or create an account using the {restore_form}.",
             "restore_form": "advanced form",
-            "restore_link": "restore your account"
+            "restore_link": "restore your account",
+            "chat_link": "chiacchierare"
         },
         "options": {
             "memo_key": "Chiave Memo",

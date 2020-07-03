@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "Hesap adı zaten alınmış.",
             "not_found": "Hesap bulunamadı.",
-            "premium_name_faucet": "Hesap adlarında en az bir tire yada rakam bulunmalıdır.",
+            "premium_name_faucet": "Hesap adlarında en az bir tire yada rakam bulunmalıdır. Premium ad hesabı satın almak istiyorsanız {chat_link} ile iletişim kurun veya aşağıdaki alana kodu girin ve Hak Talebi'ni tıklayın.",
             "premium_name_warning": "Premium hesap adı girdiniz. Normal adların içerinde en azından bir tire ya da rakam bulunur, veya hiç sesli harf yoktur."
         },
         "new_user": "New user?",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "Optionally, {restore_link} or create an account using the {restore_form}.",
             "restore_form": "advanced form",
-            "restore_link": "restore your account"
+            "restore_link": "restore your account",
+            "chat_link": "sohbet"
         },
         "options": {
             "memo_key": "Memo Anahtarı",

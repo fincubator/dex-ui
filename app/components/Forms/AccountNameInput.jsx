@@ -4,7 +4,7 @@ import classNames from "classnames";
 import AccountActions from "actions/AccountActions";
 import AccountStore from "stores/AccountStore";
 import {ChainValidation} from "bitsharesjs";
-import Translate from "react-translate-component";
+import TranslateWithLinks from "../Utility/TranslateWithLinks";
 import counterpart from "counterpart";
 import AltContainer from "alt-container";
 
@@ -104,8 +104,18 @@ class AccountNameInput extends React.Component {
         this.state.warning = null;
         if (this.props.cheapNameOnly) {
             if (!this.state.error && !ChainValidation.is_cheap_name(value))
-                this.state.error = counterpart.translate(
-                    "account.name_input.premium_name_faucet"
+                this.state.error = (
+                    <TranslateWithLinks
+                        string="account.name_input.premium_name_faucet"
+                        keys={[
+                            {
+                                type: "ext_link",
+                                value: "http://t.me/finteh",
+                                translation: "account.optional.chat_link",
+                                arg: "chat_link"
+                            }
+                        ]}
+                    />
                 );
         } else {
             if (!this.state.error && !ChainValidation.is_cheap_name(value))

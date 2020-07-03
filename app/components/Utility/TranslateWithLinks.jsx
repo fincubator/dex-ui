@@ -128,6 +128,18 @@ export default class TranslateWithLinks extends React.Component {
                         );
                         break;
 
+                    case "ext_link":
+                        value = (
+                            <a
+                                href={key.value}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Translate content={key.translation} />
+                            </a>
+                        );
+                        break;
+
                     case "icon":
                         let title = name.replace("-", "_");
                         value = (

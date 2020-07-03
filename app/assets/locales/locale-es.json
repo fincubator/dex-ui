@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "El nombre de la cuenta ya está tomado.",
             "not_found": "Cuenta no encontrada.",
-            "premium_name_faucet": "Este es un nombre premium. Los nombres premium son más caros y no pueden registrarse de forma gratuita con faucet. Intente seleccionar otro nombre que contenga al menos un guion, número o sin vocales.",
+            "premium_name_faucet": "Este es un nombre premium. Los nombres premium son más caros y no pueden registrarse de forma gratuita con faucet. Intente seleccionar otro nombre que contenga al menos un guion, número o sin vocales. Si desea comprar una cuenta de nombre premium, comuníquese con {chat_link} o ingrese el código en el campo a continuación y haga clic en Reclamar.",
             "premium_name_warning": "Este es un nombre premium que es más caro registrar. Los nombres comunes tienen al menos un guion, número o sin vocales."
         },
         "new_user": "Nuevo usuario?",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "Opcionalmente, {restore_link} o crea una cuenta usando el {restore_form}.",
             "restore_form": "forma avanzada",
-            "restore_link": "restaurar su cuenta"
+            "restore_link": "restaurar su cuenta",
+            "chat_link": "charla"
         },
         "options": {
             "memo_key": "Llave Memo",

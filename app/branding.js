@@ -301,56 +301,56 @@ export function getListingCoins() {
             ticker: "CYBER",
             account: "finteh-cyber",
             // soon: true,
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Commun",
             ticker: "CMN",
             account: "finteh-cmn",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "EOS",
             ticker: "EOS",
             account: "finteh-eos",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Golos",
             ticker: "GOLOS",
             account: "finteh-golos",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Tezos",
             ticker: "XTZ",
             account: "finteh-tezos",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Cosmos",
             ticker: "ATOM",
             account: "finteh-cosmos",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Cardano",
             ticker: "ADA",
             account: "finteh-cardano",
-            goal: 5000,
+            goal: 50000,
             votes: 0
         },
         {
             name: "Monero",
             ticker: "XMR",
             account: "finteh-monero",
-            goal: 10000,
+            goal: 100000,
             votes: 0
         }
     ];

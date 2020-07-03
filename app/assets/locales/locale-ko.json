@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "Account name is already taken.",
             "not_found": "Account not found.",
-            "premium_name_faucet": "This is a premium name. Premium names are more expensive and can't be registered for free by faucet. Try to select another name containing at least one dash, number or no vowels.",
+            "premium_name_faucet": "이것은 프리미엄 이름입니다. 프리미엄 이름은 더 비싸며 수도꼭지로 무료로 등록 할 수 없습니다. 적어도 하나의 대시, 숫자 또는 모음이없는 다른 이름을 선택하십시오. 프리미엄 이름 계정을 구입하려면 {chat_link} 에 문의하거나 아래 필드에 코드를 입력하고 소유권 주장을 클릭하십시오.",
             "premium_name_warning": "This is a premium name that is more expensive to register. Regular names have at least one dash, number or no vowels."
         },
         "new_user": "New user?",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "Optionally, {restore_link} or create an account using the {restore_form}.",
             "restore_form": "advanced form",
-            "restore_link": "restore your account"
+            "restore_link": "restore your account",
+            "chat_link": "잡담"
         },
         "options": {
             "memo_key": "메모 키",

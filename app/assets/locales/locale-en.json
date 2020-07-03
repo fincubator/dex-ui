@@ -135,7 +135,7 @@
         "name_input": {
             "name_is_taken": "Account name is already taken.",
             "not_found": "Account not found.",
-            "premium_name_faucet": "This is a premium name which is not supported by this faucet. Please enter a regular name containing least one dash, a number or no vowels.",
+            "premium_name_faucet": "This is a premium name which is not supported by this faucet. Please enter a regular name containing least one dash, a number or no vowels. If you want to buy a premium name account, contact the {chat_link} or enter the code in the field below and click Claim.",
             "premium_name_warning": "This is a premium name which is more expensive than a name containing a dash (-) or a number."
         },
         "new_user": "New user?",
@@ -146,7 +146,8 @@
         "optional": {
             "formatter": "Optionally, {restore_link} or create an account using the {restore_form}.",
             "restore_form": "advanced form",
-            "restore_link": "restore your account"
+            "restore_link": "restore your account",
+            "chat_link": "chat"
         },
         "options": {
             "memo_key": "Memo Key",

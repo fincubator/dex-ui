@@ -131,7 +131,7 @@
         "name_input": {
             "name_is_taken": "Kontoname ist bereits vergeben.",
             "not_found": "Konto nicht gefunden.",
-            "premium_name_faucet": "Es handelt sich um einen Premiumnamen. Premiumnamen sind teurer und können nicht gratis registriert werden. Nutzen Sie einen Namen der mindestens einen Bindestrich, eine Zahl oder keine Vokal enthält.",
+            "premium_name_faucet": "Es handelt sich um einen Premiumnamen. Premiumnamen sind teurer und können nicht gratis registriert werden. Nutzen Sie einen Namen der mindestens einen Bindestrich, eine Zahl oder keine Vokal enthält. Wenn Sie ein Premium-Namenskonto kaufen möchten, wenden Sie sich an den {chat_link} oder geben Sie den Code in das Feld unten ein und klicken Sie auf Anspruch.",
             "premium_name_warning": "Es handelt sich um einen Premiumnamen. Premiumnamen sind teurer. Günstige Namen enthalten mindestens einen Bindestrich, eine Zahl, oder keine Vokale."
         },
         "new_user": "Neuer Benutzer?",
@@ -142,7 +142,8 @@
         "optional": {
             "formatter": "Optional, {restore_link} oder erstellen Sie ein Konto mit {restore_form}.",
             "restore_form": "Formular",
-            "restore_link": "stellen Sie Ihr Konto wiederher"
+            "restore_link": "stellen Sie Ihr Konto wiederher",
+            "chat_link": "plaudern"
         },
         "options": {
             "memo_key": "Notitz-Schlüssel",
